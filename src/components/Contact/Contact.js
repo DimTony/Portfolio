@@ -91,7 +91,7 @@ function Contact() {
                 {alertMessage}
                 {formSubmitted && (
                   <Button
-                  onClick={() => redirectToPage("https://example.com")}
+                  onClick={() => redirectToPage("https://tonydim.vercel.app/contact")}
                   variant="primary"
                   >
                     OK
