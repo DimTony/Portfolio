@@ -1,9 +1,14 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import Button from "react-bootstrap/Button";
 import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
+import pdf from "../../Assets/Anthony_Dimojiaku-UNILAG_RESUME2023.pdf";
+import { AiOutlineDownload } from "react-icons/ai";
+
+
 
 function Home() {
   return (
@@ -12,7 +17,7 @@ function Home() {
         <Particle />
         <Container className="home-content">
           <Row>
-            <Col md={7} className="home-header">
+            <Col md={7} className="home-header" >
               <h1 style={{ paddingBottom: 15 }} className="heading">
                 Hi There!{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
@@ -28,6 +33,7 @@ function Home() {
               <div style={{ padding: 50, textAlign: "left" }}>
                 <Type />
               </div>
+              
             </Col>
 
             <Col md={5} style={{ paddingBottom: 20 }}>
@@ -37,11 +43,21 @@ function Home() {
                 className="img-fluid"
                 style={{ maxHeight: "450px" }}
               />
+              
             </Col>
           </Row>
         </Container>
       </Container>
-      <Home2 />
+      <Button
+        variant="primary"
+        href={pdf}
+        target="_blank"
+        style={{  maxWidth: "250px", fontSize: "1.2rem", padding: "15px 30px" }}
+      >
+        <AiOutlineDownload />
+        &nbsp;Download CV
+      </Button>
+      <Home2 /> 
     </section>
   );
 }
