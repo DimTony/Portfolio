@@ -5,7 +5,7 @@ import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
-import pdf from "../../Assets/Anthony_Dimojiaku-UNILAG_RESUME2023.pdf";
+import pdf from "../../Assets/AnthonyDimojiakuCV.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 
 
